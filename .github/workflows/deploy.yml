@@ -18,7 +18,7 @@ jobs:
       with:
         host: ${{ secrets.ADDRESS }}
         username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_SECRET_KEY }}
         script: |
           cd /home/ubuntu
           git clone https://github.com/yogeshpoojar/devops-test.git app || (cd app && git pull origin main)
