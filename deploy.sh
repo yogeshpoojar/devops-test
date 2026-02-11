@@ -4,7 +4,7 @@
 cd /home/ubuntu
 
 # Pull the latest code
-git clone https://github.com/gamerbhai96/devops-test-.git app || (cd app && git pull origin main)
+git clone https://github.com/yogeshpoojar/devops-test.git app || (cd app && git pull origin main)
 
 # Build and run the Docker container
 cd app
