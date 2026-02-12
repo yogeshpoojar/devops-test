@@ -22,7 +22,7 @@ jobs:
         script: |
           cd /home/ubuntu
           git clone https://github.com/yogeshpoojar/devops-test.git app || (cd app && git pull origin main)
-          cd app
+          cd app/code
           sudo docker build -t my-app .
           sudo docker stop my-app-container || true
           sudo docker rm my-app-container || true
